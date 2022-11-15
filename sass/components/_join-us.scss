@@ -1,0 +1,10 @@
+.join-us {
+  margin-right: auto;
+
+  &__title {
+    margin-bottom: 20px;
+    color: $main-bgd-color;
+    font-weight: 700;
+    line-height: calc(16 / 14);
+  }
+}

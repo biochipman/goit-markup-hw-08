@@ -1,0 +1,45 @@
+.social-media {
+  display: flex;
+  justify-content: center;
+
+  gap: 0 10px;
+
+  &__item {
+    gap: 0 10px;
+  }
+}
+
+.social-media__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  color: $team-icon-color;
+  border-radius: 50%;
+
+  transition: color $time-function, background-color $time-function;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $primary-logo-color;
+    color: $main-bgd-color;
+  }
+
+  &--grey {
+    background-color: $social-links-footer-color;
+  }
+}
+
+.social-media__icon {
+  fill: currentColor;
+
+  &--white {
+    fill: $main-bgd-color;
+  }
+}

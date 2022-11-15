@@ -1,0 +1,34 @@
+.activities {
+  padding-top: 0;
+}
+
+.activities-list {
+  display: flex;
+
+  &__item {
+    position: relative;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__desc {
+    position: absolute;
+    content: '';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 70px;
+
+    font-weight: 700;
+    line-height: calc(16 / 14);
+    background-color: $activities-bgd-color;
+    color: $main-bgd-color;
+  }
+}

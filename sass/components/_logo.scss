@@ -1,0 +1,31 @@
+.logo {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  color: $primary-logo-color;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  text-decoration: none;
+
+  &--position--page--header {
+    display: block;
+    margin-right: 93px;
+  }
+
+  &__text {
+    color: $main-font-color;
+  }
+
+  &__text--inverse {
+    color: $main-bgd-color;
+  }
+
+  &--flat {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+}

@@ -1,0 +1,30 @@
+.btn-primary {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 32px;
+
+  font-family: inherit;
+  color: $main-bgd-color;
+  background-color: $primary-logo-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+
+  &:active {
+    background-color: $btn-active-color;
+  }
+
+  &--positon--footer {
+    padding: 10px 28px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}

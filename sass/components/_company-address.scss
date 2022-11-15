@@ -1,0 +1,22 @@
+.company-address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.company-address__link {
+  color: $main-bgd-color;
+  font-style: normal;
+  font-weight: 400;
+  line-height: calc(24 / 14);
+  text-decoration: none;
+
+  transition: color $time-function;
+
+  &:hover,
+  &:focus {
+    color: $primary-logo-color;
+  }
+
+  &--grey {
+    color: $contacts-color;
+  }
+}
