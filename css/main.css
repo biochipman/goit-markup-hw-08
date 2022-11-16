@@ -33,14 +33,32 @@ textarea {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
 }
 
 .imposter {
-  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+@media screen and (min-width: 480px) {
+  .imposter {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .imposter {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .imposter {
+    width: 1200px;
+  }
 }
 
 .capitalize {
@@ -48,11 +66,16 @@ textarea {
 }
 
 .section-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-size: 36px;
   line-height: 1.1666666667;
   text-align: center;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    margin-bottom: 50px;
+  }
 }
 
 .visually-hidden {
@@ -80,15 +103,6 @@ textarea {
 .page-header {
   border-bottom: 1px solid #ececec;
 }
-.page-header__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .logo {
   display: block;
   padding-top: 24px;
@@ -116,24 +130,6 @@ textarea {
   padding: 0;
 }
 
-.main-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.main-nav__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.main-nav__item {
-  position: relative;
-}
 .main-nav__item:not(:last-child) {
   margin-right: 50px;
 }
@@ -156,10 +152,7 @@ textarea {
   color: #2196f3;
 }
 .main-nav__link--current::after {
-  position: absolute;
   display: block;
-  left: 0;
-  bottom: 0;
   content: "";
   width: 100%;
   height: 4px;
@@ -172,9 +165,6 @@ textarea {
 }
 
 .nav-contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-left: auto;
 }
 .nav-contacts__item:not(:last-child) {
@@ -182,12 +172,6 @@ textarea {
 }
 
 .nav-contacts__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   color: #757575;
@@ -270,16 +254,9 @@ textarea {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.features-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.features-list__item:not(:last-child) {
-  margin-right: 30px;
-}
 .features-list__title {
   margin-bottom: 10px;
+  text-align: center;
   font-size: 14px;
   line-height: 1.1428571429;
 }
@@ -291,46 +268,34 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
 }
 
-.activities {
-  padding-top: 0;
+.features-list__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
-.activities-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.activities {
+  padding-top: 0;
+  display: none;
 }
-.activities-list__item {
-  position: relative;
-}
+
 .activities-list__item:not(:last-child) {
   margin-right: 30px;
 }
 .activities-list__desc {
-  position: absolute;
-  content: "";
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -343,24 +308,20 @@ textarea {
 
 .team {
   background-color: #f5f4fa;
+  margin: 0 auto;
 }
 
-.team-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 .team-list__item {
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-list__item:not(:last-child) {
-  margin-right: 30px;
-}
 .team-list__desc {
   padding: 30px 0;
+}
+.team-list__img {
+  width: 100%;
 }
 .team-list__name {
   margin-bottom: 10px;
@@ -375,6 +336,10 @@ textarea {
   font-size: 16px;
   line-height: 1.1875;
   text-align: center;
+}
+
+.team-list__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .social-media {
@@ -429,12 +394,15 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: -15px;
 }
 
 .clients-list__link {
@@ -447,7 +415,6 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 170px;
   height: 92px;
   color: #afb1b8;
   border-radius: 4px;
@@ -460,8 +427,16 @@ textarea {
   color: #2196f3;
 }
 
-.clients-list__item:not(:last-child) {
-  margin-right: 30px;
+.clients-list__item {
+  -ms-flex-preferred-size: calc((100% - 60px) / 2);
+      flex-basis: calc((100% - 60px) / 2);
+  margin: 15px;
+}
+@media screen and (min-width: 768px) {
+  .clients-list__item {
+    -ms-flex-preferred-size: calc((100% - 90px) / 3);
+        flex-basis: calc((100% - 90px) / 3);
+  }
 }
 
 .client-list__icon {
@@ -471,15 +446,6 @@ textarea {
 .page-footer {
   padding: 60px 0;
   background-color: #2f303a;
-}
-
-.page-footer__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
 }
 
 .page-footer__info {

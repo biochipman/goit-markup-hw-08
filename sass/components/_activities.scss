@@ -1,12 +1,13 @@
 .activities {
   padding-top: 0;
+  display: none;
 }
 
 .activities-list {
-  display: flex;
+  // display: flex;
 
   &__item {
-    position: relative;
+    // position: relative;
   }
 
   &__item:not(:last-child) {
@@ -14,11 +15,11 @@
   }
 
   &__desc {
-    position: absolute;
-    content: '';
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // position: absolute;
+    // content: '';
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
 
     left: 0;
     bottom: 0;

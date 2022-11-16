@@ -1,5 +1,5 @@
 .nav-contacts {
-  display: flex;
+  // display: flex;
   margin-left: auto;
 
   &__item:not(:last-child) {
@@ -8,8 +8,8 @@
 }
 
 .nav-contacts__link {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 

@@ -1,9 +1,10 @@
 .team {
   background-color: $btn-secondary-color;
+  margin: 0 auto;
 }
 
 .team-list {
-  display: flex;
+  // display: flex;
 
   &__item {
     background-color: $main-bgd-color;
@@ -11,12 +12,16 @@
     border-radius: 0px 0px 4px 4px;
   }
 
-  &__item:not(:last-child) {
-    margin-right: 30px;
-  }
+  // &__item:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 
   &__desc {
     padding: 30px 0;
+  }
+
+  &__img {
+    width: 100%;
   }
 
   &__name {
@@ -35,4 +40,8 @@
     line-height: calc(19 / 16);
     text-align: center;
   }
+}
+
+.team-list__item:not(:last-child) {
+  margin-bottom: 30px;
 }
