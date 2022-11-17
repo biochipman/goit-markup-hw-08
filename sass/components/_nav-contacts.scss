@@ -1,17 +1,24 @@
 .nav-contacts {
-  // display: flex;
-  margin-left: auto;
-
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    margin-left: auto;
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  position: absolute;
+  left: 40px;
+  bottom: 134px;
   &__item:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 32px;
   }
 }
 
 .nav-contacts__link {
   // display: flex;
   // align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
 
   color: $paragraph-color;
   font-weight: 500;
@@ -26,12 +33,16 @@
 }
 
 .nav-contacts__icon {
-  margin-right: 10px;
-  fill: currentColor;
+  display: none;
 
-  transition: color $time-function;
+  @media screen and (min-width: $desktop) {
+    margin-right: 10px;
+    fill: currentColor;
 
-  &:hover {
-    fill: $primary-logo-color;
+    transition: color $time-function;
+
+    &:hover {
+      fill: $primary-logo-color;
+    }
   }
 }
