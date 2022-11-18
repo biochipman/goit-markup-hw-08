@@ -1,18 +1,23 @@
 .nav-contacts {
-  @include desktop {
+  @include tablet {
     display: flex;
     margin-left: auto;
     &__item:not(:last-child) {
       margin-right: 30px;
     }
   }
-  display: flex;
-  flex-direction: column-reverse;
-  position: absolute;
-  gap: 32px 0;
 
-  left: 40px;
-  bottom: 134px;
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    display: flex;
+    flex-direction: column-reverse;
+
+    gap: 32px 0;
+
+    left: 40px;
+    bottom: 134px;
+  }
+
   // &__item:not(:last-child) {
   //   margin-bottom: 32px;
   // }
@@ -36,14 +41,16 @@
     color: $primary-logo-color;
   }
 
-  &--mobile-tel {
-    font-size: 34px;
-    line-height: calc(40 / 34);
-  }
+  @media screen and (max-width: 767px) {
+    &--mobile-tel {
+      font-size: 34px;
+      line-height: calc(40 / 34);
+    }
 
-  &--mobile-email {
-    font-size: 24px;
-    line-height: calc(28 / 24);
+    &--mobile-email {
+      font-size: 24px;
+      line-height: calc(28 / 24);
+    }
   }
 }
 

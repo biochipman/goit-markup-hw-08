@@ -46,6 +46,9 @@
 }
 
 .social-media-mobile-set {
+  @include tablet {
+    display: none;
+  }
   position: absolute;
   left: 40px;
   bottom: 48px;
