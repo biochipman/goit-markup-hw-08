@@ -196,7 +196,15 @@ textarea {
 }
 
 .nav-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
   position: absolute;
+  gap: 32px 0;
   left: 40px;
   bottom: 134px;
 }
@@ -211,19 +219,25 @@ textarea {
     margin-right: 30px;
   }
 }
-.nav-contacts__item:not(:last-child) {
-  margin-bottom: 32px;
-}
 
 .nav-contacts__link {
   color: #757575;
   font-weight: 500;
   text-decoration: none;
+  letter-spacing: 0.02em;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-contacts__link:hover, .nav-contacts__link:focus {
   color: #2196f3;
+}
+.nav-contacts__link--mobile-tel {
+  font-size: 34px;
+  line-height: 1.1764705882;
+}
+.nav-contacts__link--mobile-email {
+  font-size: 24px;
+  line-height: 1.1666666667;
 }
 
 .nav-contacts__icon {
@@ -396,6 +410,9 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 0 10px;
 }
 .social-media__item {
@@ -435,6 +452,46 @@ textarea {
 }
 .social-media__icon--white {
   fill: #ffffff;
+}
+
+.social-media-mobile-set {
+  position: absolute;
+  left: 40px;
+  bottom: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-media-mobile-set__item {
+  padding: 0 10px;
+}
+.social-media-mobile-set__item:not(:last-child) {
+  border-right: 1px solid #757575;
+}
+.social-media-mobile-set__item:nth-child(1) {
+  padding-left: 0;
+}
+.social-media-mobile-set__item:nth-child(4) {
+  padding-right: 0;
+}
+
+.social-media-mobile-set__link {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2222222222;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #2196f3;
+}
+.social-media-mobile-set__link:link, .social-media-mobile-set__link:visited {
+  color: #2196f3;
 }
 
 .clients-list {

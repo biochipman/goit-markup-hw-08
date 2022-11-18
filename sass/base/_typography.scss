@@ -35,7 +35,7 @@ textarea {
 .section {
   padding: 60px 0;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     padding: 94px 0;
   }
 }
@@ -44,15 +44,15 @@ textarea {
   margin: 0 auto;
   padding: 0 15px;
 
-  @media screen and (min-width: 480px) {
-    width: $mobile;
+  @include mobile {
+    width: 480px;
   }
 
-  @media screen and (min-width: 768px) {
-    width: $tablet;
+  @include tablet {
+    width: 768px;
   }
-  @media screen and (min-width: 1200px) {
-    width: $desktop;
+  @include desktop {
+    width: 1200px;
   }
 }
 
@@ -62,7 +62,7 @@ textarea {
 
 .section-title {
   margin-bottom: 30px;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-bottom: 50px;
   }
 
