@@ -160,14 +160,22 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="activities-list list">
             <li class="activities-list__item">
-              <img class="activities-list__img" src="./images/box1.jpg" alt="Верстка макету" width="370" height="294" />
+              <img
+                class="activities-list__img"
+                srcset="./images/activities/box-1.jpg 1x, ./images/activities/box-1-2x.jpg 2x"
+                src="./images/activities/box-1.jpg"
+                alt="Верстка макету"
+                width="370"
+                height="294"
+              />
               <p class="activities-list__desc capitalize">Десктопні додатки</p>
             </li>
 
             <li class="activities-list__item">
               <img
                 class="activities-list__img"
-                src="./images/box2.jpg"
+                srcset="./images/activities/box-2.jpg 1x, ./images/activities/box-2-2x.jpg 2x"
+                src="./images/activities/box-2.jpg"
                 alt="Адаптація для гаджетів"
                 width="370"
                 height="294"
@@ -178,7 +186,8 @@
             <li class="activities-list__item">
               <img
                 class="activities-list__img"
-                src="./images/box3.jpg"
+                srcset="./images/activities/box-3.jpg 1x, ./images/activities/box-3-2x.jpg 2x"
+                src="./images/activities/box-3.jpg"
                 alt="Стилізація сайту"
                 width="370"
                 height="294"
@@ -195,7 +204,27 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list__item">
-              <img class="team-list__img" src="./images/member1.jpg" width="270" height="260" alt="Ігор Дем'яненко" />
+              <picture>
+                <source
+                  srcset="./images/team/desktop/member-1.jpg 1x, ./images/team/desktop/member-1-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team/tab/member-1-tab.jpg 1x, ./images/team/tab/member-1-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team/mobile/member-1-mobile.jpg 1x, ./images/team/mobile/member-1-mobile-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="team-list__img"
+                  src="./images/team/desktop/member-1.jpg"
+                  width="450"
+                  alt="Ігор Дем'яненко"
+                />
+              </picture>
+
               <div class="team-list__desc">
                 <h3 class="team-list__name">Ігор Дем'яненко</h3>
                 <p class="team-list__role">Product Designer</p>
@@ -234,7 +263,22 @@
             </li>
 
             <li class="team-list__item">
-              <img class="team-list__img" src="./images/member2.jpg" width="270" height="260" alt="Ольга Рєпіна" />
+              <picture>
+                <source
+                  srcset="./images/team/desktop/member-2.jpg 1x, ./images/team/desktop/member-2-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team/tab/member-2-tab.jpg 1x, ./images/team/tab/member-2-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team/mobile/member-2-mobile.jpg 1x, ./images/team/mobile/member-2-mobile-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img class="team-list__img" src="./images/team/desktop/member-2.jpg" width="450" alt="Ольга Рєпіна" />
+              </picture>
+
               <div class="team-list__desc">
                 <h3 class="team-list__name">Ольга Рєпіна</h3>
                 <p class="team-list__role">Frontend Developer</p>
@@ -273,7 +317,22 @@
             </li>
 
             <li class="team-list__item">
-              <img class="team-list__img" src="./images/member3.jpg" width="270" height="260" alt="Микола Тарасов" />
+              <picture>
+                <source
+                  srcset="./images/team/desktop/member-3.jpg 1x, ./images/team/desktop/member-3-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team/tab/member-3-tab.jpg 1x, ./images/team/tab/member-3-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team/mobile/member-3-mobile.jpg 1x, ./images/team/mobile/member-3-mobile-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img class="team-list__img" src="./images/team/desktop/member-3.jpg" width="450" alt="Микола Тарасов" />
+              </picture>
+
               <div class="team-list__desc">
                 <h3 class="team-list__name">Микола Тарасов</h3>
                 <p class="team-list__role">Marketing</p>
@@ -312,7 +371,27 @@
             </li>
 
             <li class="team-list__item">
-              <img class="team-list__img" src="./images/member4.jpg" width="270" height="260" alt="Михайло Єрмаков" />
+              <picture>
+                <source
+                  srcset="./images/team/desktop/member-4.jpg 1x, ./images/team/desktop/member-4-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team/tab/member-4-tab.jpg 1x, ./images/team/tab/member-4-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team/mobile/member-4-mobile.jpg 1x, ./images/team/mobile/member-4-mobile-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="team-list__img"
+                  src="./images/team/desktop/member-4.jpg"
+                  width="450"
+                  alt="Михайло Єрмаков"
+                />
+              </picture>
+
               <div class="team-list__desc">
                 <h3 class="team-list__name">Михайло Єрмаков</h3>
                 <p class="team-list__role">UI Designer</p>

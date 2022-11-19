@@ -32,19 +32,29 @@
   max-width: 1600px;
   height: 400px;
   margin: 0 auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
+  @include mobile {
+    background-image: $gradient, url(../images/hero/hero-mobile.jpg);
+    @include retina {
+      background-image: $gradient, url(../images/hero/hero-mobile-2x.jpg);
+    }
+  }
+
   @include tablet {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/hero-tablet.jpg);
+    background-image: $gradient, url(../images/hero/hero-tablet.jpg);
+    @include retina {
+      background-image: $gradient, url(../images/hero/hero-tablet-2x.jpg);
+    }
   }
 
   @include desktop {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+    background-image: $gradient, url(../images/hero/hero.jpg);
     height: 600px;
+    @include retina {
+      background-image: $gradient, url(../images/hero/hero-2x.jpg);
+    }
   }
 }
