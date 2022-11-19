@@ -132,16 +132,16 @@ textarea {
   border: none;
   cursor: pointer;
 }
-.menu-button .icon-cross {
+.menu-button .icon-menu {
   display: none;
 }
 .menu-button:hover .icon-cross, .menu-button:hover .icon-menu {
   fill: #2196f3;
 }
-.menu-button.is-open .icon-cross {
+.menu-button.is-open .icon-menu {
   display: block;
 }
-.menu-button.is-open .icon-menu {
+.menu-button.is-open .icon-cross {
   display: none;
 }
 @media screen and (min-width: 768px) {
@@ -388,29 +388,55 @@ textarea {
 }
 
 .hero {
-  padding: 200px 0;
+  padding: 118px 0;
   background-color: #2f303a;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+  }
+}
 .hero__title {
   display: inline-block;
-  width: 696px;
+  max-width: 360px;
   margin-bottom: 30px;
   color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3636363636;
+  font-size: 26px;
+  line-height: 1.6153846154;
   letter-spacing: 0.06em;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.3636363636;
+  }
 }
 
 .overlay {
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin: 0 auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-mobile.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile.jpg);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-tablet.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+    height: 600px;
+  }
 }
 
 .btn-primary {

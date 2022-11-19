@@ -30,14 +30,20 @@
             >Web<span class="logo__text">Studio</span></a
           >
 
-          <button type="button" class="menu-button is-open" aria-expanded="false" data-menu-button>
+          <button
+            type="button"
+            class="menu-button is-open"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
             <svg width="40" height="40" aria-label="Перемикач мобільного меню">
               <use class="icon-cross" href="./images/sprite.svg#icon-cross"></use>
               <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
             </svg>
           </button>
 
-          <div class="menu-container is-open" id="menu-container" data-menu>
+          <div class="menu-container" id="menu-container" data-menu>
             <ul class="main-nav__list list">
               <li class="main-nav__item">
                 <a class="main-nav__link main-nav__link--current" href="./index.html">Студія</a>

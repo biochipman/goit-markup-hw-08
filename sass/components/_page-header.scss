@@ -21,7 +21,7 @@
   border: none;
   cursor: pointer;
 
-  & .icon-cross {
+  & .icon-menu {
     display: none;
   }
 
@@ -30,11 +30,11 @@
     fill: $primary-logo-color;
   }
 
-  &.is-open .icon-cross {
+  &.is-open .icon-menu {
     display: block;
   }
 
-  &.is-open .icon-menu {
+  &.is-open .icon-cross {
     display: none;
   }
 
