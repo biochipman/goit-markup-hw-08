@@ -4,6 +4,12 @@
   justify-content: center;
   align-items: center;
   margin: -15px;
+
+  @include desktop {
+    flex-wrap: nowrap;
+
+    margin: 0;
+  }
 }
 
 .clients-list__link {
@@ -32,6 +38,14 @@
 
   @include tablet {
     flex-basis: calc((100% - 3 * 30px) / 3);
+  }
+
+  @include desktop {
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 

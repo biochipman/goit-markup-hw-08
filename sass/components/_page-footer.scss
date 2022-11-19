@@ -1,14 +1,37 @@
 .page-footer {
-  padding: 60px 0;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 
+  padding: 60px 0;
   background-color: $footer-bgd-color;
 }
 
 .page-footer__content {
-  // display: flex;
-  // align-items: baseline;
+  @include desktop {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.page-footer__container {
+  @include tablet {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+  @include desktop {
+    align-items: baseline;
+  }
 }
 
 .page-footer__info {
-  margin-right: 70px;
+  margin-bottom: 60px;
+
+  @include desktop {
+    width: 210px;
+    margin-bottom: 0;
+    margin-right: 70px;
+  }
 }

@@ -1,5 +1,9 @@
 .join-us {
-  margin-right: auto;
+  margin-bottom: 60px;
+  @include desktop {
+    margin-bottom: 0;
+    margin-right: 118px;
+  }
 
   &__title {
     margin-bottom: 20px;

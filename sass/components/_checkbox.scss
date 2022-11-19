@@ -14,16 +14,25 @@
     padding-left: 18px;
 
     color: $paragraph-color;
-    line-height: calc(24 / 14);
+    font-size: 12px;
+    line-height: calc(14 / 12);
+
+    @include desktop {
+      font-size: 14px;
+      line-height: calc(24 / 14);
+    }
   }
 
   &__layout {
     position: absolute;
-
+    @include desktop {
+      top: 0;
+    }
+    top: -4px;
     left: 7px;
 
     margin-top: 0.2em;
-    margin-left: -1em;
+    margin-left: -0.85em;
     width: 16px;
     height: 15px;
     overflow: hidden;

@@ -3,8 +3,10 @@
   position: relative;
 
   &__content {
-    // display: flex;
-    // align-items: center;
+    @include tablet {
+      display: flex;
+      align-items: center;
+    }
   }
 }
 
@@ -21,6 +23,11 @@
 
   & .icon-cross {
     display: none;
+  }
+
+  &:hover .icon-cross,
+  &:hover .icon-menu {
+    fill: $primary-logo-color;
   }
 
   &.is-open .icon-cross {
@@ -57,5 +64,11 @@
 
   @include tablet {
     display: flex;
+    align-items: center;
+  }
+
+  @include desktop {
+    width: 933px;
+    justify-content: space-between;
   }
 }
