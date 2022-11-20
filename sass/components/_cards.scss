@@ -1,7 +1,36 @@
+.card-set {
+  @include tablet {
+    margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.card-set__item {
+  margin: 0 auto;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  @include mobile {
+    width: 450px;
+  }
+
+  @include tablet {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+
+  @include desktop {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
+  }
+}
+
 .card {
   display: block;
   text-decoration: none;
-
   transition: transform $time-function, opacity $time-function;
 
   &:link,
@@ -19,12 +48,23 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 322px;
 
     font-size: 18px;
     line-height: calc(28 / 18);
 
     color: $main-bgd-color;
+
+    @include mobile {
+      width: 402px;
+    }
+
+    @include tablet {
+      width: 306px;
+    }
+
+    @include desktop {
+      width: 322px;
+    }
   }
 
   &__header {
@@ -55,7 +95,6 @@
 
     top: 0;
     left: 0;
-    width: 370px;
     height: 294px;
 
     background-color: $card-overlay-bgd-color;
@@ -64,6 +103,18 @@
     transform: translateY(100%);
 
     transition: transform $time-function, opacity $time-function;
+
+    @include mobile {
+      width: 450px;
+    }
+
+    @include tablet {
+      width: 354px;
+    }
+
+    @include desktop {
+      width: 370px;
+    }
   }
 
   &:hover &__overlay,
@@ -73,20 +124,8 @@
   }
 }
 
-.card-set {
-  display: flex;
-  flex-wrap: wrap;
-
-  &__item {
-    margin-right: 30px;
-    margin-bottom: 30px;
-  }
-
-  &__item:nth-child(3n) {
-    margin-right: 0;
-  }
-
-  &__item:nth-last-child(-n + 3) {
-    margin-bottom: 0;
+.card__body--stretched {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    height: 146px;
   }
 }

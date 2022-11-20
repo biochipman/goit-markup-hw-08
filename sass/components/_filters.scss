@@ -1,9 +1,28 @@
 .filters {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
 
-  &__item:not(:last-child) {
-    margin-right: 8px;
+  @media screen and (max-width: 767px) {
+    width: 326px;
+  }
+
+  @include mobile {
+    flex-wrap: wrap;
+    gap: 13px 8px;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+
+  @include tablet {
+    flex-wrap: nowrap;
+    gap: 0 8px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @include desktop {
+    flex-wrap: nowrap;
+    gap: 0 8px;
+    justify-content: center;
+    margin-bottom: 50px;
   }
 }

@@ -29,14 +29,20 @@
             >Web<span class="logo__text">Studio</span></a
           >
 
-          <button type="button" class="menu-button is-open" aria-expanded="false" data-menu-button>
+          <button
+            type="button"
+            class="menu-button is-open"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
             <svg width="40" height="40" aria-label="Перемикач мобільного меню">
               <use class="icon-cross" href="./images/sprite.svg#icon-cross"></use>
               <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
             </svg>
           </button>
 
-          <div class="menu-container is-open" id="menu-container" data-menu>
+          <div class="menu-container" id="menu-container" data-menu>
             <ul class="main-nav__list list">
               <li class="main-nav__item">
                 <a class="main-nav__link" href="./index.html">Студія</a>
@@ -110,14 +116,25 @@
             <li class="card-set__item">
               <a class="card" href="#">
                 <div class="card__header">
-                  <img
-                    class="card__img"
-                    srcset="./images/projects/project-1.jpg 1x, ./images/projects/project-1-2x.jpg 2x"
-                    src="./images/projects/project-1.jpg"
-                    width="370"
-                    height="294"
-                    alt="Технокряк"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/projects/desktop/project-1.jpg 1x, ./images/projects/desktop/project-1-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/projects/tab/project-1-tab.jpg 1x, ./images/projects/tab/project-1-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/mobile/project-1-mobile.jpg    1x,
+                        ./images/projects/mobile/project-1-mobile-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img class="card__img" src="./images/projects/desktop/project-1.jpg" width="450" alt="Технокряк" />
+                  </picture>
+
                   <div class="card__overlay">
                     <p class="card__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -126,7 +143,7 @@
                   </div>
                 </div>
 
-                <div class="card__body">
+                <div class="card__body card__body--stretched">
                   <h2 class="card__title">Технокряк</h2>
                   <p class="card__type">Веб-сайт</p>
                 </div>
@@ -136,14 +153,25 @@
             <li class="card-set__item">
               <a class="card" href="#">
                 <div class="card__header">
-                  <img
-                    class="card__img"
-                    srcset="./images/projects/project-2.jpg 1x, ./images/projects/project-2-2x.jpg 2x"
-                    src="./images/projects/project-2.jpg"
-                    width="370"
-                    height="294"
-                    alt="Постер New Orlean vs Golden Star"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/projects/desktop/project-2.jpg 1x, ./images/projects/desktop/project-2-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/projects/tab/project-2-tab.jpg 1x, ./images/projects/tab/project-2-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/mobile/project-2-mobile.jpg    1x,
+                        ./images/projects/mobile/project-2-mobile-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img class="card__img" src="./images/projects/desktop/project-2.jpg" width="450" alt="Технокряк" />
+                  </picture>
+
                   <div class="card__overlay">
                     <p class="card__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -152,7 +180,7 @@
                   </div>
                 </div>
 
-                <div class="card__body">
+                <div class="card__body card__body--stretched">
                   <h2 class="card__title">Постер New Orlean vs Golden Star</h2>
                   <p class="card__type">Дизайн</p>
                 </div>
@@ -162,14 +190,25 @@
             <li class="card-set__item">
               <a class="card" href="#">
                 <div class="card__header">
-                  <img
-                    class="card__img"
-                    srcset="./images/projects/project-3.jpg 1x, ./images/projects/project-3-2x.jpg 2x"
-                    src="./images/projects/project-3.jpg"
-                    width="370"
-                    height="294"
-                    alt="Ресторан Seafood"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/projects/desktop/project-3.jpg 1x, ./images/projects/desktop/project-3-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/projects/tab/project-3-tab.jpg 1x, ./images/projects/tab/project-3-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/mobile/project-3-mobile.jpg    1x,
+                        ./images/projects/mobile/project-3-mobile-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img class="card__img" src="./images/projects/desktop/project-3.jpg" width="450" alt="Технокряк" />
+                  </picture>
+
                   <div class="card__overlay">
                     <p class="card__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -188,14 +227,25 @@
             <li class="card-set__item">
               <a class="card" href="#">
                 <div class="card__header">
-                  <img
-                    class="card__img"
-                    srcset="./images/projects/project-4.jpg 1x, ./images/projects/project-4-2x.jpg 2x"
-                    src="./images/projects/project-4.jpg"
-                    width="370"
-                    height="294"
-                    alt="Проєкт Prime"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/projects/desktop/project-4.jpg 1x, ./images/projects/desktop/project-4-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/projects/tab/project-4-tab.jpg 1x, ./images/projects/tab/project-4-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/mobile/project-4-mobile.jpg    1x,
+                        ./images/projects/mobile/project-4-mobile-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img class="card__img" src="./images/projects/desktop/project-4.jpg" width="450" alt="Технокряк" />
+                  </picture>
+
                   <div class="card__overlay">
                     <p class="card__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -214,14 +264,25 @@
             <li class="card-set__item">
               <a class="card" href="#">
                 <div class="card__header">
-                  <img
-                    class="card__img"
-                    srcset="./images/projects/project-5.jpg 1x, ./images/projects/project-5-2x.jpg 2x"
-                    src="./images/projects/project-5.jpg"
-                    width="370"
-                    height="294"
-                    alt="Проєкт Boxes"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/projects/desktop/project-5.jpg 1x, ./images/projects/desktop/project-5-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/projects/tab/project-5-tab.jpg 1x, ./images/projects/tab/project-5-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/mobile/project-5-mobile.jpg    1x,
+                        ./images/projects/mobile/project-5-mobile-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img class="card__img" src="./images/projects/desktop/project-5.jpg" width="450" alt="Технокряк" />
+                  </picture>
+
                   <div class="card__overlay">
                     <p class="card__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -240,14 +301,25 @@
             <li class="card-set__item">
               <a class="card" href="#">
                 <div class="card__header">
-                  <img
-                    class="card__img"
-                    srcset="./images/projects/project-6.jpg 1x, ./images/projects/project-6-2x.jpg 2x"
-                    src="./images/projects/project-6.jpg"
-                    width="370"
-                    height="294"
-                    alt="Inspiration has no Borders"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/projects/desktop/project-6.jpg 1x, ./images/projects/desktop/project-6-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/projects/tab/project-6-tab.jpg 1x, ./images/projects/tab/project-6-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/mobile/project-6-mobile.jpg    1x,
+                        ./images/projects/mobile/project-6-mobile-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img class="card__img" src="./images/projects/desktop/project-6.jpg" width="450" alt="Технокряк" />
+                  </picture>
+
                   <div class="card__overlay">
                     <p class="card__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -266,14 +338,25 @@
             <li class="card-set__item">
               <a class="card" href="#">
                 <div class="card__header">
-                  <img
-                    class="card__img"
-                    srcset="./images/projects/project-7.jpg 1x, ./images/projects/project-7-2x.jpg 2x"
-                    src="./images/projects/project-7.jpg"
-                    width="370"
-                    height="294"
-                    alt="Видання Limited Edition"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/projects/desktop/project-7.jpg 1x, ./images/projects/desktop/project-7-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/projects/tab/project-7-tab.jpg 1x, ./images/projects/tab/project-7-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/mobile/project-7-mobile.jpg    1x,
+                        ./images/projects/mobile/project-7-mobile-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img class="card__img" src="./images/projects/desktop/project-7.jpg" width="450" alt="Технокряк" />
+                  </picture>
+
                   <div class="card__overlay">
                     <p class="card__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -292,14 +375,25 @@
             <li class="card-set__item">
               <a class="card" href="#">
                 <div class="card__header">
-                  <img
-                    class="card__img"
-                    srcset="./images/projects/project-8.jpg 1x, ./images/projects/project-8-2x.jpg 2x"
-                    src="./images/projects/project-8.jpg"
-                    width="370"
-                    height="294"
-                    alt="Проєкт LAB"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/projects/desktop/project-8.jpg 1x, ./images/projects/desktop/project-8-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/projects/tab/project-8-tab.jpg 1x, ./images/projects/tab/project-8-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/mobile/project-8-mobile.jpg    1x,
+                        ./images/projects/mobile/project-8-mobile-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img class="card__img" src="./images/projects/desktop/project-8.jpg" width="450" alt="Технокряк" />
+                  </picture>
+
                   <div class="card__overlay">
                     <p class="card__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -318,14 +412,25 @@
             <li class="card-set__item">
               <a class="card" href="#">
                 <div class="card__header">
-                  <img
-                    class="card__img"
-                    srcset="./images/projects/project-9.jpg 1x, ./images/projects/project-9-2x.jpg 2x"
-                    src="./images/projects/project-9.jpg"
-                    width="370"
-                    height="294"
-                    alt="Growing Business"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/projects/desktop/project-9.jpg 1x, ./images/projects/desktop/project-9-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/projects/tab/project-9-tab.jpg 1x, ./images/projects/tab/project-9-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/mobile/project-9-mobile.jpg    1x,
+                        ./images/projects/mobile/project-9-mobile-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img class="card__img" src="./images/projects/desktop/project-9.jpg" width="450" alt="Технокряк" />
+                  </picture>
+
                   <div class="card__overlay">
                     <p class="card__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
