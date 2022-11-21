@@ -46,16 +46,13 @@
 }
 
 .social-media-mobile-set {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
   @include tablet {
     display: none;
   }
-  position: absolute;
-  left: 40px;
-  bottom: 48px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .social-media-mobile-set__item {
@@ -86,5 +83,10 @@
   &:link,
   &:visited {
     color: $primary-logo-color;
+  }
+
+  @media screen and (max-width: 479px) {
+    font-size: 12px;
+    line-height: calc(16 / 12);
   }
 }

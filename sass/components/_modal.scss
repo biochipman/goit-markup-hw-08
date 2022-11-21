@@ -21,22 +21,11 @@
 }
 
 .modal {
-  @include desktop {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    margin: 0;
-
-    width: 100%;
-    max-width: 528px;
-  }
   position: relative;
 
   margin: 93px auto;
   width: 100%;
-  max-width: 450px;
+  max-width: 290px;
   padding: 40px;
   border-radius: 4px;
 
@@ -47,6 +36,22 @@
     fill: #000;
 
     transition: fill $time-function;
+  }
+
+  @include mobile {
+    max-width: 450px;
+  }
+
+  @include desktop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    margin: 0;
+
+    width: 100%;
+    max-width: 528px;
   }
 }
 

@@ -15,9 +15,14 @@
     margin-bottom: 30px;
     color: $main-bgd-color;
     font-weight: 900;
-    font-size: 26px;
-    line-height: calc(42 / 26);
+    font-size: 22px;
+    line-height: calc(34 / 22);
     letter-spacing: 0.06em;
+
+    @include mobile {
+      font-size: 26px;
+      line-height: calc(42 / 26);
+    }
 
     @include desktop {
       max-width: 696px;
@@ -32,6 +37,11 @@
   max-width: 1600px;
   height: 400px;
   margin: 0 auto;
+  background-image: $gradient, url(../images/hero/hero-mobile.jpg);
+  @include retina {
+    background-image: $gradient, url(../images/hero/hero-mobile-2x.jpg);
+  }
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
