@@ -17,12 +17,8 @@
 .page-footer__container {
   @include tablet {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-  }
-
-  @include desktop {
     align-items: baseline;
+    justify-content: space-around;
   }
 }
 

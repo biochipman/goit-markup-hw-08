@@ -7,8 +7,6 @@
 }
 
 .card-set__item {
-  margin: 0 auto;
-
   &:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -20,11 +18,13 @@
   @include tablet {
     flex-basis: calc((100% - 2 * 30px) / 2);
     margin: 15px;
+    margin-top: 0;
   }
 
   @include desktop {
     flex-basis: calc((100% - 3 * 30px) / 3);
     margin: 15px;
+    margin-top: 0;
   }
 }
 

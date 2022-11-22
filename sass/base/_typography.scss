@@ -4,6 +4,12 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
+
+  @media screen and (max-width: 767px) {
+    .menu-container.is-open & {
+      overflow: hidden;
+    }
+  }
 }
 
 body.modal-open {

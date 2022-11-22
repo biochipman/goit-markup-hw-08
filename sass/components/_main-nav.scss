@@ -7,7 +7,7 @@
 
 .main-nav__list {
   @media screen and (max-width: 767px) {
-    margin-bottom: 302px;
+    margin-bottom: auto;
   }
 
   @include tablet {
